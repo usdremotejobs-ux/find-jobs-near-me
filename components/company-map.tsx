@@ -37,9 +37,9 @@ function createCompanyIcon(logoUrl: string, name: string, isSelected: boolean) {
         <img src="${logoUrl}" alt="${name} logo" onerror="this.style.display='none'" />
       </div>
     `,
-    iconSize: [32, 32],
-    iconAnchor: [16, 16],
-    popupAnchor: [0, -16],
+    iconSize: [36, 36],
+    iconAnchor: [18, 18],
+    popupAnchor: [0, -18],
   });
 }
 
