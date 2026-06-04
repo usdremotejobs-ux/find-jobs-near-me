@@ -98,10 +98,13 @@ body {
 }
 
 .company-marker img {
-  width: 100%;
-  height: 100%;
-  padding: 6px;
-  object-fit: contain;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  padding: 6px !important;
+  object-fit: contain !important;
   position: relative;
   z-index: 1;
   background: #ffffff;
@@ -128,7 +131,7 @@ body {
   }
 
   .company-marker img {
-    padding: 5px;
+    padding: 5px !important;
   }
 
   .company-marker span {

@@ -29,7 +29,7 @@ function createCompanyIcon(logoUrl: string, name: string, isSelected: boolean) {
     html: `
       <div class="company-marker${isSelected ? " company-marker-selected" : ""}">
         <span>${initials}</span>
-        <img src="${logoUrl}" alt="${name} logo" loading="lazy" onerror="this.style.display='none'" />
+        <img src="${logoUrl}" alt="${name} logo" onerror="this.style.display='none'" />
       </div>
     `,
     iconSize: [58, 58],
