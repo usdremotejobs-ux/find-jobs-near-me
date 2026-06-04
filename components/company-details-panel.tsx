@@ -62,6 +62,12 @@ export default function CompanyDetailsPanel({
               <p className="mt-2 text-sm font-medium leading-5 text-zinc-400">
                 {visibleCompany.jobsCount} open {visibleCompany.jobsCount === 1 ? "job" : "jobs"}
               </p>
+              <p className="mt-2 text-[13px] font-medium leading-5 text-zinc-300">
+                {visibleCompany.oneLiner}
+              </p>
+              <p className="mt-1 text-[12px] font-medium leading-4 text-zinc-500">
+                {visibleCompany.address}
+              </p>
             </div>
 
             <button

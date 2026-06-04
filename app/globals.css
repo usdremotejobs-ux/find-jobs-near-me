@@ -73,10 +73,10 @@ body {
   place-items: center;
   width: 58px;
   height: 58px;
-  border: 2px solid rgba(255, 255, 255, 0.74);
-  border-radius: 999px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(214, 219, 230, 0.96));
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.36), 0 0 0 8px rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.72), rgba(214, 219, 230, 0.68));
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.36), 0 0 0 4px rgba(255, 255, 255, 0.026);
   cursor: pointer;
   transform: translateY(0) scale(1);
   transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease, filter 200ms ease;
@@ -84,22 +84,22 @@ body {
 }
 
 .company-marker:hover {
-  border-color: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 0.38);
   filter: saturate(1.06);
   transform: translateY(-3px) scale(1.045);
-  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.46), 0 0 0 10px rgba(255, 255, 255, 0.095);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.46), 0 0 0 5px rgba(255, 255, 255, 0.04);
 }
 
 .company-marker-selected {
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.48);
   transform: translateY(-4px) scale(1.07);
-  box-shadow: 0 28px 58px rgba(0, 0, 0, 0.52), 0 0 0 12px rgba(255, 255, 255, 0.13);
+  box-shadow: 0 28px 58px rgba(0, 0, 0, 0.52), 0 0 0 6px rgba(255, 255, 255, 0.05);
 }
 
 .company-marker img {
-  width: 42px;
-  height: 42px;
-  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
   object-fit: cover;
   position: relative;
   z-index: 1;
@@ -125,8 +125,8 @@ body {
   }
 
   .company-marker img {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
   }
 
   .company-marker span {

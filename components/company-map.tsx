@@ -84,7 +84,7 @@ export default function CompanyMap() {
       const companyMatchesSearch =
         normalizedQuery.length === 0 ||
         company.name.toLowerCase().includes(normalizedQuery) ||
-        company.area.toLowerCase().includes(normalizedQuery) ||
+        company.address.toLowerCase().includes(normalizedQuery) ||
         company.category.toLowerCase().includes(normalizedQuery);
 
       const matchingJobs = companyJobs.filter((job) => {

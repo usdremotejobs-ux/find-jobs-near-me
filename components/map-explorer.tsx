@@ -36,7 +36,7 @@ export default function MapExplorer({
             type="search"
             value={searchQuery}
             onChange={(event) => onSearchChange(event.target.value)}
-            placeholder="Company or area"
+            placeholder="Company or address"
             className="h-12 w-full rounded-full border border-white/[0.11] bg-[#10131b]/88 px-5 text-[14px] font-medium text-white shadow-[0_18px_55px_rgba(0,0,0,0.34)] outline-none backdrop-blur-2xl transition placeholder:text-zinc-500 focus:border-white/[0.20] focus:bg-[#121621]/94 focus:shadow-[0_22px_68px_rgba(0,0,0,0.42)]"
           />
         </label>
