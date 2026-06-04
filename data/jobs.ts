@@ -12,7 +12,6 @@ export type Job = {
 };
 
 export const jobs: Job[] = [
-export const jobs: Job[] = [
   {
     id: "phonepe-ai-creative-head",
     companyId: "phonepe",
@@ -9037,5 +9036,4 @@ export const jobs: Job[] = [
     applyUrl: "https://careers.swiggy.com/#/careers?src%3Dcareers=&search%3Dtitle:content%26p%3DeyJwYWdlVHlwZSI6ImpkIiwiY3ZTb3VyY2UiOiJjYXJlZXJzIiwicmVxSWQiOjI2OTQxLCJyZXF1ZXN0ZXIiOnsiaWQiOiIiLCJjb2RlIjoiIiwibmFtZSI6IiJ9LCJwYWdlIjoiY2FyZWVycyIsImJ1ZmlsdGVyIjotMSwiY3VzdG9tRmllbGRzIjp7InNlYXJjaCI6InRpdGxlOmNvbnRlbnQifX0=",
     postedAt: "4/8/2026",
   },
-];
 ];
