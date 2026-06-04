@@ -107,7 +107,10 @@ export default function CompanyMap() {
         return jobMatchesSearch && jobMatchesFilter;
       });
 
-      if (matchingJobs.length === 0) {
+      const shouldShowCompanyWithoutMatchingJobs =
+        activeFilter === null && (normalizedQuery.length === 0 || companyMatchesSearch);
+
+      if (matchingJobs.length === 0 && !shouldShowCompanyWithoutMatchingJobs) {
         return [];
       }
 

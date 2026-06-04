@@ -81,6 +81,12 @@ export default function CompanyDetailsPanel({
           </div>
 
           <div className="flex-1 space-y-3 overflow-y-auto px-4 py-4 md:px-5">
+            {visibleCompany.jobs.length === 0 ? (
+              <div className="rounded-[20px] border border-white/[0.09] bg-white/[0.052] p-4 text-[13px] font-medium leading-5 text-zinc-400">
+                No matching jobs for the current search or filter.
+              </div>
+            ) : null}
+
             {visibleCompany.jobs.map((job) => (
               <article
                 key={job.id}
