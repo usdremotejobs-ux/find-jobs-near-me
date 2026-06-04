@@ -71,12 +71,11 @@ body {
 .company-marker {
   display: grid;
   place-items: center;
-  width: 36px;
-  height: 36px;
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  background: #08090d;
-  padding: 2.5px;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #ffffff;
+  border-radius: 8px;
+  background: #ffffff;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   cursor: pointer;
   transform: translateY(0) scale(1);
@@ -95,7 +94,7 @@ body {
 .company-marker-selected {
   border-color: #ffffff;
   transform: translateY(-3px) scale(1.12);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.6), 0 16px 40px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4), 0 16px 40px rgba(0, 0, 0, 0.65);
 }
 
 .company-marker img {
@@ -104,7 +103,6 @@ body {
   height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  border-radius: 6px;
   object-fit: cover !important;
   position: relative;
   z-index: 1;
@@ -112,7 +110,7 @@ body {
 
 .company-marker span {
   position: absolute;
-  color: #ffffff;
+  color: #111827;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -125,15 +123,15 @@ body {
   }
 
   .company-marker {
-    width: 28px;
-    height: 28px;
-    border-radius: 7px;
-    border-width: 1.5px;
-    padding: 1.8px;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    border-width: 1px;
+    padding: 0;
   }
 
   .company-marker img {
-    border-radius: 4px;
+    border-radius: 0;
   }
 
   .company-marker span {
