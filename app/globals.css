@@ -73,7 +73,7 @@ body {
   place-items: center;
   width: 58px;
   height: 58px;
-  border: 0.3px solid rgba(255, 255, 255, 0.30);
+  border: 0.3px solid #333333;
   border-radius: 16px;
   background: #ffffff;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.36);
@@ -85,25 +85,25 @@ body {
 }
 
 .company-marker:hover {
-  border-color: rgba(255, 255, 255, 0.60);
+  border-color: #666666;
   filter: saturate(1.06);
   transform: translateY(-3px) scale(1.045);
   box-shadow: 0 22px 48px rgba(0, 0, 0, 0.46);
 }
 
 .company-marker-selected {
-  border-color: rgba(255, 255, 255, 0.85);
+  border-color: #ffffff;
   transform: translateY(-4px) scale(1.07);
   box-shadow: 0 28px 58px rgba(0, 0, 0, 0.52);
 }
 
 .company-marker img {
   display: block;
-  width: 72% !important;
-  height: 72% !important;
+  width: 100% !important;
+  height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
   position: relative;
   z-index: 1;
 }
