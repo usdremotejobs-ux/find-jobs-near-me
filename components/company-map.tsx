@@ -265,52 +265,6 @@ export default function CompanyMap() {
         onSearchChange={setSearchQuery}
         onFilterChange={setActiveFilter}
       />
-
-      {/* USD Remote Jobs Floating Bubble */}
-      <a
-        href="https://usdremotejobs.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={[
-          "fixed bottom-4 right-3 md:bottom-5 md:right-5 z-[480]",
-          "pointer-events-auto flex items-center gap-3 rounded-2xl border border-white/[0.09] bg-[#10131b]/88 px-4 py-3 shadow-[0_20px_50px_rgba(0,0,0,0.45)] backdrop-blur-2xl transition-all duration-300 ease-out hover:border-white/[0.18] hover:bg-[#121621]/94 hover:shadow-[0_22px_55px_rgba(59,130,246,0.12)]",
-          selectedCompany
-            ? "translate-y-[-48dvh] md:translate-y-0 md:-translate-x-[392px]"
-            : "translate-x-0 translate-y-0",
-        ].join(" ")}
-      >
-        {/* Left Icon (Dollar / Globe badge) */}
-        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-[0_4px_12px_rgba(16,185,129,0.3)]">
-          <span className="text-[16px] font-bold">$</span>
-        </div>
-
-        {/* Text Area */}
-        <div className="min-w-0 flex-1">
-          <h4 className="text-[13.5px] font-semibold leading-tight text-white flex items-center gap-1.5">
-            USD Paying Remote Jobs
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
-            </span>
-          </h4>
-          <p className="mt-0.5 text-[11px] font-medium leading-tight text-zinc-400">
-            Remote Jobs with 3x more salary
-          </p>
-        </div>
-
-        {/* Right Arrow */}
-        <div className="text-zinc-400 transition hover:text-white pl-1">
-          <svg
-            className="h-4 w-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2.5}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </div>
-      </a>
     </main>
   );
 }
