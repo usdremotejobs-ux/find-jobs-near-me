@@ -5,8 +5,8 @@ export const filterOptions = [
   "Design",
   "Marketing",
   "Sales",
-  "Remote",
-  "Internship",
+  "Product",
+  "Operations",
 ] as const;
 
 export type FilterOption = (typeof filterOptions)[number];
