@@ -42,7 +42,7 @@ export default function CompanyDetailsPanel({
       ].join(" ")}
     >
       {visibleCompany ? (
-        <div className="pointer-events-auto flex max-h-[46dvh] flex-col overflow-hidden rounded-[28px] border border-white/[0.12] bg-[#10131b]/92 shadow-[0_30px_100px_rgba(0,0,0,0.58)] backdrop-blur-2xl md:h-full md:max-h-none md:rounded-[30px]">
+        <div className="pointer-events-auto flex h-[75dvh] max-h-[75dvh] flex-col overflow-hidden rounded-[28px] border border-white/[0.12] bg-[#10131b]/92 shadow-[0_30px_100px_rgba(0,0,0,0.58)] backdrop-blur-2xl md:h-full md:max-h-none md:rounded-[30px]">
           <div className="mx-auto mt-3 h-1.5 w-11 rounded-full bg-white/[0.18] md:hidden" />
 
           <div className="flex flex-col border-b border-white/[0.08] px-5 pb-5 pt-4 md:px-6 md:pb-6 md:pt-6">
