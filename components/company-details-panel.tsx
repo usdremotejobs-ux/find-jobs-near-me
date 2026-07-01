@@ -46,7 +46,7 @@ export default function CompanyDetailsPanel({
           <div className="mx-auto mt-3 h-1.5 w-11 rounded-full bg-white/[0.18] md:hidden" />
 
           <div className="flex flex-col border-b border-white/[0.08] px-5 pb-5 pt-4 md:px-6 md:pb-6 md:pt-6">
-            {/* Top row: Logo, Name, and Close Button */}
+            {/* Top row: Logo, Name (with jobs count next to it), and Close Button */}
             <div className="flex items-center gap-4">
               <img
                 src={visibleCompany.logoUrl}
@@ -55,12 +55,14 @@ export default function CompanyDetailsPanel({
               />
 
               <div className="min-w-0 flex-1 pt-0.5">
-                <div className="mb-1.5 inline-flex rounded-full border border-white/[0.10] bg-white/[0.075] px-2.5 py-1 text-[11px] font-semibold leading-none text-zinc-300">
-                  {visibleCompany.category}
+                <div className="flex flex-wrap items-center gap-2">
+                  <h2 className="truncate text-[25px] font-semibold leading-[1.08] text-white md:text-[27px]">
+                    {visibleCompany.name}
+                  </h2>
+                  <span className="inline-flex rounded-full border border-white/[0.10] bg-white/[0.075] px-2.5 py-1 text-[11px] font-semibold leading-none text-zinc-300">
+                    {visibleCompany.jobsCount} open {visibleCompany.jobsCount === 1 ? "job" : "jobs"}
+                  </span>
                 </div>
-                <h2 className="truncate text-[25px] font-semibold leading-[1.08] text-white md:text-[27px]">
-                  {visibleCompany.name}
-                </h2>
               </div>
 
               <button
@@ -72,11 +74,13 @@ export default function CompanyDetailsPanel({
                 X
               </button>
             </div>
+          </div>
 
-            {/* Bottom details block: jobs, description, and address aligned left */}
-            <div className="mt-4">
+          <div className="flex-1 space-y-3 overflow-y-auto px-4 py-4 md:px-5">
+            {/* Company Info Block (Non-sticky) */}
+            <div className="px-1 pb-1">
               <p className="text-sm font-medium leading-5 text-zinc-400">
-                {visibleCompany.jobsCount} open {visibleCompany.jobsCount === 1 ? "job" : "jobs"}
+                Industry: {visibleCompany.category}
               </p>
               <p className="mt-2 text-[13px] font-medium leading-5 text-zinc-300">
                 {visibleCompany.oneLiner}
@@ -85,9 +89,6 @@ export default function CompanyDetailsPanel({
                 {visibleCompany.address}
               </p>
             </div>
-          </div>
-
-          <div className="flex-1 space-y-3 overflow-y-auto px-4 py-4 md:px-5">
             {/* USD Remote Jobs Glowing Strip */}
             <a
               href="https://usdremotejobs.com"
